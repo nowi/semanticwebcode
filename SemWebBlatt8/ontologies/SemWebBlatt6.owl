@@ -1,0 +1,483 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY SemWebBlatt6 "http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#"
+     xml:base="http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:SemWebBlatt6="http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#has-age -->
+
+    <owl:ObjectProperty rdf:about="#has-age">
+        <rdfs:range rdf:resource="#age"/>
+        <rdfs:domain rdf:resource="#person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#has-brother -->
+
+    <owl:ObjectProperty rdf:about="#has-brother">
+        <rdfs:domain rdf:resource="#child"/>
+        <rdfs:subPropertyOf rdf:resource="#has_sibling"/>
+        <rdfs:range rdf:resource="#man"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#has-child -->
+
+    <owl:ObjectProperty rdf:about="#has-child">
+        <rdfs:subPropertyOf rdf:resource="#has-descendants"/>
+        <rdfs:domain rdf:resource="#person"/>
+        <rdfs:range rdf:resource="#person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#has-descendants -->
+
+    <owl:ObjectProperty rdf:about="#has-descendants">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:domain rdf:resource="#parent"/>
+        <rdfs:range rdf:resource="#person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#has-father -->
+
+    <owl:ObjectProperty rdf:about="#has-father">
+        <rdfs:domain rdf:resource="#child"/>
+        <rdfs:range rdf:resource="#father"/>
+        <rdfs:subPropertyOf rdf:resource="#has-parent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#has-gender -->
+
+    <owl:ObjectProperty rdf:about="#has-gender">
+        <rdfs:domain rdf:resource="#person"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#female"/>
+                    <rdf:Description rdf:about="#male"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#has-mother -->
+
+    <owl:ObjectProperty rdf:about="#has-mother">
+        <rdfs:subPropertyOf rdf:resource="#has-parent"/>
+        <rdfs:range rdf:resource="#mother"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#has-parent -->
+
+    <owl:ObjectProperty rdf:about="#has-parent">
+        <rdfs:domain rdf:resource="#child"/>
+        <owl:inverseOf rdf:resource="#has-child"/>
+        <rdfs:range rdf:resource="#person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#has-sister -->
+
+    <owl:ObjectProperty rdf:about="#has-sister">
+        <rdfs:subPropertyOf rdf:resource="#has_sibling"/>
+        <rdfs:range rdf:resource="#man"/>
+        <rdfs:domain rdf:resource="#person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#has-spouse -->
+
+    <owl:ObjectProperty rdf:about="#has-spouse">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:domain rdf:resource="#person"/>
+        <rdfs:range rdf:resource="#person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#has_sibling -->
+
+    <owl:ObjectProperty rdf:about="#has_sibling">
+        <rdfs:domain rdf:resource="#person"/>
+        <rdfs:range rdf:resource="#person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#has-name -->
+
+    <owl:DatatypeProperty rdf:about="#has-name">
+        <rdfs:domain rdf:resource="#person"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#adult -->
+
+    <owl:Class rdf:about="#adult">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#has-age"/>
+                        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">18</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#age -->
+
+    <owl:Class rdf:about="#age">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#aunt -->
+
+    <owl:Class rdf:about="#aunt">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#woman"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#has_sibling"/>
+                        <owl:someValuesFrom rdf:resource="#parent"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#child -->
+
+    <owl:Class rdf:about="#child">
+        <rdfs:subClassOf rdf:resource="#person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#father -->
+
+    <owl:Class rdf:about="#father">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#man"/>
+                    <rdf:Description rdf:about="#parent"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#female -->
+
+    <owl:Class rdf:about="#female">
+        <owl:disjointWith rdf:resource="#male"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#male -->
+
+    <owl:Class rdf:about="#male"/>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#man -->
+
+    <owl:Class rdf:about="#man">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#male"/>
+                    <rdf:Description rdf:about="#person"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#mother -->
+
+    <owl:Class rdf:about="#mother">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#parent"/>
+                    <rdf:Description rdf:about="#woman"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#multikid -->
+
+    <owl:Class rdf:about="#multikid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#child"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#has_sibling"/>
+                        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#parent -->
+
+    <owl:Class rdf:about="#parent">
+        <rdfs:subClassOf rdf:resource="#person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#has-child"/>
+                <owl:someValuesFrom rdf:resource="#child"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#has-child"/>
+                <owl:allValuesFrom rdf:resource="#child"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#person -->
+
+    <owl:Class rdf:about="#person"/>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#singlekid -->
+
+    <owl:Class rdf:about="#singlekid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#child"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#has_sibling"/>
+                        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#has_sibling"/>
+                        <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#spouse -->
+
+    <owl:Class rdf:about="#spouse">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#has-spouse"/>
+                        <owl:someValuesFrom rdf:resource="#person"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#uncle -->
+
+    <owl:Class rdf:about="#uncle">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#man"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#has_sibling"/>
+                        <owl:someValuesFrom rdf:resource="#parent"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#woman -->
+
+    <owl:Class rdf:about="#woman">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#female"/>
+                    <rdf:Description rdf:about="#person"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#Alice -->
+
+    <woman rdf:about="#Alice">
+        <has-name rdf:datatype="&xsd;string">Alice</has-name>
+        <has-child rdf:resource="#Betty"/>
+        <has-child rdf:resource="#Charles"/>
+    </woman>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#Betty -->
+
+    <woman rdf:about="#Betty">
+        <has-name rdf:datatype="&xsd;string">Betty</has-name>
+        <has-child rdf:resource="#Doris"/>
+        <has-child rdf:resource="#Eve"/>
+    </woman>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#Charles -->
+
+    <singlekid rdf:about="#Charles">
+        <has_sibling rdf:resource="#Betty"/>
+        <has-father rdf:resource="#CharlesSenior"/>
+    </singlekid>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#CharlesSenior -->
+
+    <rdf:Description rdf:about="#CharlesSenior">
+        <has-name rdf:datatype="&xsd;string">Charles</has-name>
+    </rdf:Description>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#Doris -->
+
+    <woman rdf:about="#Doris">
+        <has-name rdf:datatype="&xsd;string">Doris</has-name>
+    </woman>
+    
+
+
+    <!-- http://ki.informatik.uni-mannheim.de/ontologies/2009/4/SemWebBlatt6.owl#Eve -->
+
+    <woman rdf:about="#Eve">
+        <has-name rdf:datatype="&xsd;string">Eve</has-name>
+    </woman>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.941) http://owlapi.sourceforge.net -->
+

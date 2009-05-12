@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:component-scan base-package="de.unima.semweb.blatt8"/>
+
+
+
+    <context:annotation-config/>
+
+    <bean id="reasoningServiceImpl" class="de.unima.semweb.blatt8.ReasoningServiceImpl">
+        <property name="wordnetService" ref="wordNetService"/>
+
+
+    </bean>
+
+
+
+
+    <bean id="wordNetService" class="de.unima.semweb.blatt8.WordNetServiceImpl">
+        <property name="workingDirectoryString" value="/Users/nowi/workspace/SemWebBlatt8"/>
+    </bean>
+
+
+    <bean id="appPropertiesPersonOntology" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="singleton" value="true"/>
+
+        <property name="properties">
+            <props>
+                <prop key="ontology.path">file:///Users/nowi/ontologies/SemWebBlatt6/SemWebBlatt6.owl</prop>
+                <!--<prop key="onotlogy.person.path">file://ontologies/SemWebBlatt6.owl</prop>-->
+            </props>
+        </property>
+    </bean>
+
+    <bean id="appPropertiesPizzaOntology" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="singleton" value="true"/>
+
+        <property name="properties">
+            <props>
+                <prop key="ontology.path">file:///pizza.owl</prop>
+                <!--<prop key="onotlogy.person.path">file://ontologies/SemWebBlatt6.owl</prop>-->
+            </props>
+        </property>
+    </bean>
+
+
+    <!--owlOntologyManagerFactory(OWLOntologyManagerFactory) {-->
+    <!--ontologyPath = "file:///eclass_51en.owl"-->
+    <!--}-->
+
+
+    <!--owlOntologyManagerStatic(owlOntologyManagerFactory:"createInstance") {bean ->-->
+    <!--bean.singleton = true-->
+    <!--}-->
+
+</beans>
