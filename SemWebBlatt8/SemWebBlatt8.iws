@@ -15,50 +15,13 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/sentidx.vrb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/index.verb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/verb.exc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/unima/semweb/blatt8/OWLPropertyAxiomVisitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/index.adv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/index.adj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/ReasoningServiceImpl.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/Makefile.in" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/unima/semweb/blatt8/SingleOWLOntologyManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SemWebBlatt8.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/noun.exc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/Makefile.am" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/index.noun" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/data.adv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SemWebBlatt8.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ontologies/SemWebBlatt6.owl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/data.noun" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/log.grind.3.0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/sents.vrb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/frames.vrb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inferredont.owl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/cntlist.rev" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/data.verb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/data.adj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/unima/semweb/blatt8/TestWordNet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SemWebBlatt8.ipr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/adv.exc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/adj.exc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/unima/semweb/blatt8/WordNetServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ontologies/pizza.owl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/unima/semweb/blatt8/SpringStarter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/index.sense" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/de/unima/semweb/blatt8/OWLHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applicationContext.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/cntlist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/verb.Framestext" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/scala/ResoningServiceSpecTest.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dict/lexnames" />
+    <list default="true" name="Default" comment="&#10;# Brief commit desciption here&#10;&#10;# Full commit description here (comment lines starting with '#' will not be included)&#10;&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SemWebBlatt8.ipr" afterPath="$PROJECT_DIR$/SemWebBlatt8.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SemWebBlatt8.iws" afterPath="$PROJECT_DIR$/SemWebBlatt8.iws" />
     </list>
-    <ignored path="SemWebBlatt8.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="SemWebBlatt8.iws" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="Commander">
@@ -75,32 +38,6 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/scala/ResoningServiceSpecTest.scala" line="120" class="Class at ResoningServiceSpecTest.scala:120" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/scala/ResoningServiceSpecTest.scala" line="115" class="Class at ResoningServiceSpecTest.scala:115" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/main/scala/ReasoningServiceImpl.scala" line="136" class="Class at ReasoningServiceImpl.scala:136" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -182,10 +119,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResoningServiceSpecTest.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ResoningServiceSpecTest.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/scala/ResoningServiceSpecTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="60" selection-start="6158" selection-end="6158" vertical-scroll-proportion="0.23293768">
+            <state line="134" column="46" selection-start="7029" selection-end="7029" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -220,20 +157,20 @@
       </file>
       <file leaf-file-name="applicationContext.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/applicationContext.xml">
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state line="11" column="73" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
+          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+            <state />
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="7" selection-start="4380" selection-end="4380" vertical-scroll-proportion="0.0">
+            <state line="15" column="37" selection-start="609" selection-end="609" vertical-scroll-proportion="0.40152964">
               <folding />
             </state>
           </provider>
@@ -343,7 +280,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="true" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="com.intellij.openapi.vcs.configurable.VcsManagerConfigurable$4" />
+    <property name="options.lastSelected" value="com.intellij.openapi.vcs.changes.ui.IgnoredSettingsPanel" />
     <property name="project.structure.side.proportion" value="0.13333334" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -613,6 +550,14 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="StarteamConfiguration">
@@ -664,8 +609,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1401" height="878" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1397" height="872" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
@@ -675,21 +620,23 @@
       <window_info id="Code explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51655626" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" />
+      <window_info id="Hudson" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1986755" sideWeight="0.5" order="10" side_tool="false" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19784656" sideWeight="0.5" order="10" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19822486" sideWeight="0.5615894" order="6" side_tool="false" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28254437" sideWeight="0.5615894" order="0" side_tool="false" />
+      <window_info id="Hudson Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.281366" sideWeight="0.7927322" order="0" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42913908" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -844,25 +791,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="73" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/ResoningServiceSpecTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="73" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0">
+        <state line="134" column="46" selection-start="7029" selection-end="7029" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="7" selection-start="4380" selection-end="4380" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/ResoningServiceSpecTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="60" selection-start="6158" selection-end="6158" vertical-scroll-proportion="0.23293768">
+        <state line="15" column="37" selection-start="609" selection-end="609" vertical-scroll-proportion="0.40152964">
           <folding />
         </state>
       </provider>
